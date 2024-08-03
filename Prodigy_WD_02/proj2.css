@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f9;
+}
+
+.stopwatch {
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#display {
+    font-size: 4em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.controls button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#startStop {
+    background: #28a745;
+    color: #fff;
+}
+
+#startStop:hover {
+    background: #218838;
+}
+
+#lap {
+    background: #ffc107;
+    color: #fff;
+}
+
+#lap:hover {
+    background: #e0a800;
+}
+
+#reset {
+    background: #dc3545;
+    color: #fff;
+}
+
+#reset:hover {
+    background: #c82333;
+}
+
+#laps {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.lap {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.lap:last-child {
+    border-bottom: none;
+}
